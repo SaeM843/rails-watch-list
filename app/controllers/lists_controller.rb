@@ -12,7 +12,7 @@ class ListsController < ApplicationController
   end
 
   def create
-    @liat = List.new(list_params)
+    @list = List.new(list_params)
     if @list.save
       redirect_to list_path(@list)
     else
