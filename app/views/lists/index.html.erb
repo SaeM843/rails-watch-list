@@ -1,0 +1,9 @@
+<div>
+  <h1>Index Lists</h1>
+  <ul>
+    <% @lists.each do |list| %>
+    <li><%= list.name %></li>
+    <% end %>
+  </ul>
+  <%= link_to "Add a new list", new_list_path %>
+</div>
