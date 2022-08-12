@@ -5,5 +5,5 @@
   <% @list.bookmarks.each do |bookmark| %>
     <%= link_to "Delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
   <% end %>
-  <p><%= link_to "Back to lists", lists_path %></P>
+  <p><%= link_to "Back to lists", root_path %></P>
 </div>
