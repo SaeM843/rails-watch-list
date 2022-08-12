@@ -1,8 +1,9 @@
 <div class="container">
   <h1>New Lists Page</h1>
     <%= simple_form_for @list do |f| %>
-      <%= f.input :name %>
-      <%= f.submit "Create Lists", class: "btn btn-primary" %>
-    <% end %>
-    <%= link_to "Back to lists", lists_path %>
+        <%= f.input :name %>
+      <%= f.input :photo, as: :file %>
+        <%= f.submit "Create Lists", class: "btn btn-primary" %>
+      <% end %>
+      <%= link_to "Back to lists", lists_path %>
 </div>
